@@ -1,0 +1,2 @@
+.nonNull : Objects.requireNonNull
+    ANY      →  Objects.requireNonNull($expr$)
