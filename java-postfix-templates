@@ -1,2 +1,9 @@
 .nonNull : Objects.requireNonNull
     ANY      →  Objects.requireNonNull($expr$)
+
+.println : println 
+    ANY      →  System.out.println($expr$);
+    
+
+.print : print
+    ANY      →  System.out.print($expr$);
