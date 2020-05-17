@@ -4,16 +4,15 @@
 .println : println 
     ANY      →  System.out.println($expr$);
     
-
 .print : print
     ANY      →  System.out.print($expr$);
-    
+
 .assertTrue : junit true assertion
-    BOOLEAN      →  Assertions.assertTrue($expr$);    
- 
+  boolean      →  Assertions.assertTrue($expr$);
+
 .assertFalse : junit false assertion
-    BOOLEAN      →  Assertions.assertFalse($expr$);  
-    
+  boolean      →  Assertions.assertFalse($expr$);
+
 .assertEquals : junit equals assertion
-    ANY      →  Assertions.assertEquals($END$,$expr$);      
+  ANY      →  Assertions.assertEquals($END$,$expr$);
  
