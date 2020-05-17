@@ -7,3 +7,13 @@
 
 .print : print
     ANY      →  System.out.print($expr$);
+    
+.assertTrue : junit true assertion
+    BOOLEAN      →  Assertions.assertTrue($expr$);    
+ 
+.assertFalse : junit false assertion
+    BOOLEAN      →  Assertions.assertFalse($expr$);  
+    
+.assertEquals : junit equals assertion
+    ANY      →  Assertions.assertEquals($END$,$expr$);      
+ 
