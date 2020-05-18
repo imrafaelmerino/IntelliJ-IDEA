@@ -1,3 +1,12 @@
+.nonNull : Objects.requireNonNull
+     ANY      →  Objects.requireNonNull($expr$)
+     
+.optNullable : Optional.ofNullable
+     ANY      →  Optional.ofNullable($expr$)     
+     
+.opt : Optional.of
+     ANY      →  Optional.of($expr$)      
+
 .println : println 
     ANY      →  System.out.println($expr$);
     
